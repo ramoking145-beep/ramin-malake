@@ -1,0 +1,11 @@
+Offline cache configuration v5
+
+This package makes the project's AppCache manifest comprehensive for the
+local project files, keeps the exact core.js?v=10 URL when referenced by the
+project, and removes stale manifest entries that do not exist locally.
+
+For AppCache to work, the server must return:
+Content-Type: text/cache-manifest
+
+This changes offline asset caching only. It does not modify exploit/jailbreak
+logic or make a jailbreak payload work offline.
