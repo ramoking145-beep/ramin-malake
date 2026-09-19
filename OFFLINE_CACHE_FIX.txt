@@ -1,0 +1,10 @@
+Offline cache fix v3
+
+- Rebuilt cache.appcache using valid AppCache URL entries (removed inline SHA/hash text).
+- Removed the duplicate core.js?v=10 cache entry.
+- Kept only required local files and firmware patch files in the offline cache.
+- Removed the missing image.png CSS reference.
+- Changed the manifest version comment to force a fresh AppCache update.
+
+Important: the web server must serve cache.appcache with Content-Type: text/cache-manifest.
+After uploading this version, clear the PS4 browser's website data/cache once, then open the page online for the first cache build.
